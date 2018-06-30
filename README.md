@@ -12,6 +12,7 @@ So i recently went for my learners license and i was trying to get good material
   * `VueJS`
   * `Vuex`
   * `Vuetify`
+  * `Pug`
   * `Webpack`
 2. Backend (to be confirmed)
   * `Firebase`
