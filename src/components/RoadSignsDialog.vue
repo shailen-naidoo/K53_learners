@@ -6,7 +6,7 @@ v-dialog( v-model="roadSignsDialog" fullscreen hide-overlay transition="dialog-b
         v-icon( :color="appbarIconColor" ) {{ hide ? "close": "keyboard_arrow_left" }}
       v-toolbar-title( :class="[appbarTextColor]") {{ title }}
     v-card-text
-      v-container( fluid grid-list-md )
+      v-container( grid-list-xl )
         v-slide-y-transition
           v-layout.mt-5( row wrap v-show="hide" )
             v-flex( md4 v-for="({ title, body, image, open, style: { color, textColor } },i) in subgroups" :key="i" )

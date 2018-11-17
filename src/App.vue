@@ -1,12 +1,5 @@
 <template lang="pug">
 v-app
-  // v-navigation-drawer( v-model="drawer" app="")
-    v-list
-      v-list-tile(value="true" v-for="(item, i) in items" :key="i")
-        v-list-tile-action
-          v-icon(v-html="item.icon")
-        v-list-tile-content
-          v-list-tile-title(v-text="item.title")
   v-toolbar.yellow( fixed app )
     v-toolbar-side-icon(@click.stop="drawer = !drawer")
     v-toolbar-title(v-text="title")
@@ -77,46 +70,6 @@ v-app
     road-signs-dialog
     rules-dialog
     controls-dialog
-    // section
-      v-parallax(src="https://images.unsplash.com/photo-1477071285213-9ba413bf77b2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e45c6c87dce197970cd051f7d75b03ba&auto=format&fit=crop&w=750&q=80" height="380")
-        v-layout(column="" align-center="" justify-center="")
-          .headline.white--text.mb-3.text-xs-center Web development has never been easier
-          em Kick-start your application today
-          v-btn.blue.lighten-2.mt-5(dark="" large="" href="/pre-made-themes")
-            | Get Started
-    // section
-      v-container(grid-list-xl="")
-        v-layout.my-5(row="" wrap="" justify-center="")
-          v-flex(xs12="" sm4="")
-            v-card.elevation-0.transparent
-              v-card-title.layout.justify-center(primary-title="")
-                .headline Company info
-              v-card-text
-                | Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                | Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
-          v-flex(xs12="" sm4="" offset-sm1="")
-            v-card.elevation-0.transparent
-              v-card-title.layout.justify-center(primary-title="")
-                .headline Contact us
-              v-card-text
-                | Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-              v-list.transparent
-                v-list-tile
-                  v-list-tile-action
-                    v-icon.blue--text.text--lighten-2 phone
-                  v-list-tile-content
-                    v-list-tile-title 777-867-5309
-                v-list-tile
-                  v-list-tile-action
-                    v-icon.blue--text.text--lighten-2 place
-                  v-list-tile-content
-                    v-list-tile-title Chicago, US
-                v-list-tile
-                  v-list-tile-action
-                    v-icon.blue--text.text--lighten-2 email
-                  v-list-tile-content
-                    v-list-tile-title john@vuetifyjs.com
 </template>
 
 <script>
