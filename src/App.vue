@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-content>
-      <router-view>
-
-      </router-view>
+      <v-slide-y-transition mode="out-in">
+        <router-view></router-view>
+      </v-slide-y-transition>
     </v-content>
     <v-bottom-nav :active.sync="bottom_nav" shift app fixed :value="true" color="yellow">
       <v-btn flat value="dashboard" :to="{ name: 'Dashboard' }">
