@@ -2,10 +2,10 @@
   <v-app>
     <v-content>
       <v-slide-y-transition mode="out-in">
-        <router-view></router-view>
+        <router-view @show-bottom-nav="showBottomNav"></router-view>
       </v-slide-y-transition>
     </v-content>
-    <v-bottom-nav :active.sync="bottom_nav" shift app fixed :value="true" color="yellow">
+    <v-bottom-nav v-model="show_bottom_nav" :active.sync="bottom_nav" shift app fixed :value="true" color="yellow">
       <v-btn flat value="dashboard" :to="{ name: 'Dashboard' }">
         <span>Dashboard</span>
         <v-icon>dashboard</v-icon>
@@ -32,7 +32,13 @@ export default {
   name: 'App',
   data () {
     return {
+      show_bottom_nav: false,
       bottom_nav: "dashboard"
+    }
+  },
+  methods: {
+    showBottomNav(e) {
+      this.show_bottom_nav = e;
     }
   }
 }

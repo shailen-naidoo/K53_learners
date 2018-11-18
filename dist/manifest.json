@@ -1,6 +1,6 @@
 {
-  "name": "K53 Learners",
-  "short_name": "K53",
+  "name": "project",
+  "short_name": "project",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -16,5 +16,5 @@
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#FFEB3B"
+  "theme_color": "#4DBA87"
 }

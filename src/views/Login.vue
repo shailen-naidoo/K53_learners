@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { auth, provider, LOCAL } from "../helpers/firebase";
+import { auth, provider } from "../helpers/firebase";
 
 export default {
   methods: {
@@ -13,9 +13,16 @@ export default {
       auth.signInWithPopup(provider)
         .then(() => this.$router.replace({ name: "Dashboard" }));
     }
+  },
+  async beforeRouteEnter(to,from,next) {
+    const user = await new Promise((resolve,reject) => auth.onAuthStateChanged(user => resolve(user)));
+
+    if(user) {
+      next({ name: "Dashboard" });
+    } else {
+      next(vm => vm.$emit("show-bottom-nav",false));
+    }
   }
 }
-
-// auth.onAuthStateChanged(user => console.log(user));
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <v-container grid-list-md>
     <v-layout row wrap :class="{ 'mt-5 pt-5 px-5': $vuetify.breakpoint.width > 600 }">
-      <v-flex md4 v-for="(course,i) in courses" :key="i" @click="log()" class="pointer">
+      <v-flex md4 v-for="(course,i) in courses" :key="i" class="pointer">
         <v-card hover>
             <v-card-text class="text-md-center text-xs-center text-sm-center">
             <v-icon large :color="course.color">{{ course.icon }}</v-icon>
@@ -37,20 +37,6 @@ export default {
           color: "blue darken-2"
         }
       ]
-    }
-  },
-  methods: {
-    log() {
-      console.log("hello")
-    }
-  },
-  async beforeRouteEnter({ meta: { requiresAuth }},from,next) {
-    const user = await new Promise((resolve,reject) => auth.onAuthStateChanged(user => resolve(user)));
-
-    if(requiresAuth && user) {
-      next();
-    } else {
-      next({ name: "Login" });
     }
   }
 }
