@@ -1,7 +1,16 @@
 <template>
-<div>
-  <v-btn small @click="login()">sigin</v-btn>
-</div>
+<v-container>
+  <v-layout class="mt-5">
+    <v-flex md4 offset-md4 class="mt-5">
+     <v-card>
+       <v-card-title class="headline"><v-spacer></v-spacer>Sign into App<v-spacer></v-spacer></v-card-title>
+       <v-card-text class="text-md-center">
+          <v-btn small color="yellow lighten-2 mb-4" depressed @click="login()">Sign in with Google</v-btn>
+       </v-card-text>
+     </v-card>
+    </v-flex>
+  </v-layout>
+</v-container>
 </template>
 
 <script>

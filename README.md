@@ -15,6 +15,8 @@ Currently the project uses caching for offline capabilities and maybe later in t
 ## What is the project built with?
 
 1. [Vue.js](https://vuejs.org/) a progressive frontend framework
+2. [Vue Router](https://router.vuejs.org/) a routing library for Vue
+3. [Vuex](https://vuex.vuejs.org/) a state management libray for Vue
 2. [Vuetify.js](https://vuetifyjs.com/) a Material Design UI library for Vue
 3. [Apollo GraphQL](https://www.apollographql.com/) a GraphQL implementation
 4. [Firebase](https://www.apollographql.com/) a scalable backend for Mobile and Web applications
