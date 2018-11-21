@@ -10,7 +10,7 @@ So here is a little backstory on why i decided to start this project... Back in 
 
 ## Main PWA features?
 
-Currently the project uses caching for offline capabilities and maybe later in the future push notifications can be built in
+Currently the project uses caching for offline capabilities and maybe later in the future push notifications can be built in. The project is barely a week old, so there is still a lot of work to be done 😁
 
 ## What is the project built with?
 
