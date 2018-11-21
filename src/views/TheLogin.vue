@@ -4,7 +4,7 @@
     <v-flex md4 offset-md4 class="mt-5">
      <v-card>
        <v-card-title class="headline"><v-spacer></v-spacer>Sign into App<v-spacer></v-spacer></v-card-title>
-       <v-card-text class="text-md-center">
+       <v-card-text class="text-md-center text-sm-center text-xs-center">
           <v-btn small color="yellow lighten-2 mb-4" depressed @click="login()">Sign in with Google</v-btn>
        </v-card-text>
      </v-card>
