@@ -12,36 +12,36 @@ export default new Router({
     {
       path: "/login",
       name: "Login",
-      component: () => import("./views/Login.vue")
+      component: () => import("./views/TheLogin.vue")
     },
     {
       path: "/app",
-      component: () => import("./views/App.vue"),
+      component: () => import("./views/TheApp.vue"),
       meta: { requiresAuth: true },
       children: [
         {
           path: "dashboard",
           name: "Dashboard",
           meta: { requiresAuth: true },
-          component: () => import("./views/Dashboard.vue")
+          component: () => import("./views/TheDashboard.vue")
         },
         {
           path: "courses",
           name: "Courses",
           meta: { requiresAuth: true },
-          component: () => import("./views/Courses.vue")
+          component: () => import("./views/TheCourses.vue")
         }, 
         {
           path: "exams",
           name: "Exams",
           meta: { requiresAuth: true },
-          component: () => import("./views/Exams.vue")
+          component: () => import("./views/TheExams.vue")
         },
         {
           path: "account",
           name: "Account",
           meta: { requiresAuth: true },
-          component: () => import("./views/Account.vue")
+          component: () => import("./views/TheAccount.vue")
         }
       ]
     }
