@@ -1,14 +1,18 @@
 <template>
   <v-container grid-list-md>
-    <v-layout row wrap :class="{ 'mt-5 pt-5 px-5': $vuetify.breakpoint.width > 600 }">
-      <v-flex md4 v-for="(course,i) in courses" :key="i" class="pointer" @click="showCourseDetails(i)">
-        <v-card hover>
-          <v-card-text class="text-md-center text-xs-center text-sm-center">
-            <v-icon large :color="course.color">{{ course.icon }}</v-icon>
-            <p class="headline font-weight-light">{{ course.title }}</p>
-            <p class="grey--text font-weight-light">Course {{ i + 1 }}</p>
-          </v-card-text>
-        </v-card>
+    <v-layout row justify-center>
+      <v-flex md6>
+        <v-layout column wrap :class="{ 'mt-5 pt-5 px-5': $vuetify.breakpoint.width > 600 }">
+          <v-flex v-for="(course,i) in courses" :key="i" class="pointer" @click="showCourseDetails(i)">
+            <v-card hover>
+              <v-card-text class="text-md-center text-xs-center text-sm-center">
+                <v-icon large :color="course.color">{{ course.icon }}</v-icon>
+                <p class="headline font-weight-light">{{ course.title }}</p>
+                <p class="grey--text font-weight-light">Course {{ i + 1 }}</p>
+              </v-card-text>
+            </v-card>
+          </v-flex>
+        </v-layout>
       </v-flex>
     </v-layout>
     <v-dialog v-model="show_course_details" max-width="500px">
