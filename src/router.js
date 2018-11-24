@@ -23,25 +23,25 @@ export default new Router({
           path: "dashboard",
           name: "Dashboard",
           meta: { requiresAuth: true },
-          component: () => import("./views/TheDashboard.vue")
+          component: () => import("./views/TheAppDashboard.vue")
         },
         {
           path: "courses",
           name: "Courses",
           meta: { requiresAuth: true },
-          component: () => import("./views/TheCourses.vue")
+          component: () => import("./views/TheAppCourses.vue")
         }, 
         {
           path: "exams",
           name: "Exams",
           meta: { requiresAuth: true },
-          component: () => import("./views/TheExams.vue")
+          component: () => import("./views/TheAppExams.vue")
         },
         {
           path: "account",
           name: "Account",
           meta: { requiresAuth: true },
-          component: () => import("./views/TheAccount.vue")
+          component: () => import("./views/TheAppAccount.vue")
         }
       ]
     }
