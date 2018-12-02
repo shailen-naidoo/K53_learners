@@ -1,8 +1,6 @@
 <template>
 <div>
-  <v-slide-x-transition mode="out-in">
     <router-view @show-bottom-nav="showBottomNav"></router-view>
-  </v-slide-x-transition>
 </div>
 </template>
 

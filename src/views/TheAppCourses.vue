@@ -1,8 +1,8 @@
 <template>
-  <v-container grid-list-md>
+  <v-container grid-list-lg>
     <v-layout row justify-center>
       <v-flex md6>
-        <v-layout column wrap :class="{ 'mt-5 pt-5 px-5': $vuetify.breakpoint.width > 600 }">
+        <v-layout column wrap :class="{ 'mt-5 pt-3 px-5': $vuetify.breakpoint.width > 600 }">
           <v-flex v-for="(course,i) in courses" :key="i" class="pointer" @click="showCourseDetails(i)">
             <v-card hover>
               <v-card-text class="text-md-center text-xs-center text-sm-center">
