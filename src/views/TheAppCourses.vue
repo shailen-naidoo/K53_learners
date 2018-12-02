@@ -28,7 +28,7 @@
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn small flat :color="course_details.color">Take Course</v-btn>
+          <v-btn small flat :color="course_details.color" :to="{ name: course_details.title }">Take Course</v-btn>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -36,8 +36,6 @@
 </template>
 
 <script>
-import { auth } from "../helpers/firebase.js";
-
 export default {
   data() {
     return {

@@ -32,6 +32,24 @@ export default new Router({
           component: () => import("./views/TheAppCourses.vue")
         }, 
         {
+          path: "courses/roadsigns",
+          name: "Road signs",
+          meta: { requiresAuth: true },
+          component: () => import("./views/TheAppCoursesRoadSigns.vue") 
+        },
+        {
+          path: "courses/rulesoftheroad",
+          name: "Rules of the road",
+          meta: { requiresAuth: true },
+          component: () => import("./views/TheAppCoursesRulesOfTheRoad.vue") 
+        },
+        {
+          path: "courses/controls",
+          name: "Controls",
+          meta: { requiresAuth: true },
+          component: () => import("./views/TheAppCoursesControls.vue") 
+        },
+        {
           path: "exams",
           name: "Exams",
           meta: { requiresAuth: true },

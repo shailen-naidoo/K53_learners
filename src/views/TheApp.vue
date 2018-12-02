@@ -1,7 +1,7 @@
 <template>
 <div>
   <v-slide-x-transition mode="out-in">
-    <router-view></router-view>
+    <router-view @show-bottom-nav="showBottomNav"></router-view>
   </v-slide-x-transition>
 </div>
 </template>
@@ -17,6 +17,11 @@ export default {
       next();
     } else {
       next({ name: "Login" });
+    }
+  },
+  methods: {
+    showBottomNav(e) {
+      this.$emit("show-bottom-nav",e);
     }
   },
   mounted() {
