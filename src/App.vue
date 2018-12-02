@@ -5,7 +5,7 @@
         <router-view @show-bottom-nav="showBottomNav"></router-view>
       </v-slide-y-transition>
     </v-content>
-    <v-bottom-nav v-model="show_bottom_nav" :active.sync="bottom_nav" shift app fixed :value="true" color="yellow">
+    <v-bottom-nav v-model="show_bottom_nav" :active.sync="bottom_nav" app fixed :value="true" color="yellow">
       <v-btn v-for="(page,i) in bottom_nav_pages" :key="i" :to="{ name: page.title }" flat :value="page.title.toLowerCase()" :ripple="false">
         <span>{{ page.title }}</span>
         <v-icon>{{ page.icon }}</v-icon>
