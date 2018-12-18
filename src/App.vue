@@ -7,15 +7,18 @@
       app 
       fixed 
       color="yellow" 
+      v-model="show_bottom_nav"
       :active.sync="page"
       :value="true"
     >
       <v-btn 
-        v-for="(page,i) in pages" 
+        v-for="({ title, icon },i) in pages" 
+        :value="title.toLowerCase()"
+        :to="{ name: title }"
         :key="i"
       >
-        <span>{{ page.title }}</span>
-        <v-icon>{{ page.icon }}</v-icon>
+        <span>{{ title }}</span>
+        <v-icon>{{ icon }}</v-icon>
       </v-btn>
     </v-bottom-nav>
   </v-app> 
@@ -25,6 +28,7 @@
 export default {
   name: "App",
   data: () => ({
+    show_bottom_nav: true,
     page: "dashboard",
     pages: [
       {

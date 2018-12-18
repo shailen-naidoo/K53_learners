@@ -8,7 +8,12 @@ export default new Router({
     {
       path: "/app",
       name: "App",
-      component: () => import("./views/App.vue")
+      component: () => import("./views/App.vue"),
+      children: ["Dashboard","Courses","Exams","Account"].map(page => ({
+        path: page.toLowerCase(),
+        name: page,
+        component: () => import(`./views/${page}.vue`)
+      }))
     }
   ]
 });
