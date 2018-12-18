@@ -1,3 +1,3 @@
-<template>
-  <v-container></v-container>
+<template lang="pug">
+
 </template>

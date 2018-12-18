@@ -12,7 +12,7 @@ export default new Router({
       children: ["Dashboard","Courses","Exams","Account"].map(page => ({
         path: page.toLowerCase(),
         name: page,
-        component: () => import(`./views/${page}.vue`)
+        component: () => import(`./views/App${page}.vue`)
       }))
     }
   ]

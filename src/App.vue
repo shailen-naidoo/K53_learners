@@ -1,27 +1,23 @@
-<template>
-  <v-app>
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-    <v-bottom-nav 
-      app 
-      fixed 
-      color="yellow" 
+<template lang="pug">
+  v-app
+    v-content
+      router-view
+    v-bottom-nav(
+      app
+      fixed
+      color="yellow"
       v-model="show_bottom_nav"
       :active.sync="page"
       :value="true"
-    >
-      <v-btn 
-        v-for="({ title, icon },i) in pages" 
+    )
+      v-btn(
+        v-for="({ title, icon },i) in pages"
         :value="title.toLowerCase()"
         :to="{ name: title }"
         :key="i"
-      >
-        <span>{{ title }}</span>
-        <v-icon>{{ icon }}</v-icon>
-      </v-btn>
-    </v-bottom-nav>
-  </v-app> 
+      )
+        span {{ title }}
+        v-icon {{ icon }}
 </template>
 
 <script>
