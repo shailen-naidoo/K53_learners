@@ -16,11 +16,10 @@
         xs12
       )
         h1.headline.font-weight-light {{ text }}
-        v-btn(
+        v-btn.mt-4(
           round
           depressed
           color="yellow"
-          class="mt-4"
           :to="{ name: 'Courses' }"
         ) courses
 </template>
