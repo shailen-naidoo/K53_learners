@@ -10,7 +10,10 @@
       justify-center
       align-center
     )
-      v-flex( md6 sm8 )
+      v-flex( 
+        md6 
+        sm8 
+      )
         v-layout( column )
           v-flex( 
             v-for="({ icon, title, color, description },i) in courses"
@@ -26,16 +29,27 @@
                 ) {{ icon }}
                 p.headline.font-weight-light {{ title }}
                 p.grey--text.font-weight-light {{ description }}
-    v-dialog( v-model="show_courses_info" scrollable max-width="565px" )
+    v-dialog( 
+      v-model="show_courses_info" 
+      scrollable 
+      max-width="565px" 
+    )
       v-card
         v-card-text
           v-subheader Topics
           v-list.pt-0
-            v-list-tile( v-for="(topic,i) in course_selected_info" :key="i" )
+            v-list-tile( 
+              v-for="(topic,i) in course_selected_info" 
+              :key="i" 
+            )
               v-list-tile-content {{ topic }}
         v-card-actions
           v-spacer
-          v-btn( small flat ) take course
+          v-btn( 
+            small 
+            flat 
+            :to="{ name: 'Roadsigns' }" 
+          ) start course
 </template>
 
 <script>

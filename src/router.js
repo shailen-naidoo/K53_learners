@@ -13,7 +13,11 @@ export default new Router({
         path: page.toLowerCase(),
         name: page,
         component: () => import(`./views/App${page}.vue`)
-      }))
+      })).concat({
+        path: "courses/roadsigns",
+        name: "Roadsigns",
+        component: () => import("./views/AppCoursesRoadSigns.vue")
+      })
     }
   ]
 });
