@@ -4,11 +4,15 @@
 
 <script>
 import Course from "../components/Course.vue";
+import { mapGetters } from "vuex";
 
 export default {
-  data: () => ({
-    topics: ["Regulartory signs","Warning signs","Traffic signals","Temporary signs","Road markings","Guidance signs","Information signs"]
-  }),
+  computed: {
+    ...mapGetters(["courseSelectedInfo"]),
+    topics() {
+      return this.courseSelectedInfo.topics.map(({ title }) => title);
+    }
+  },
   components: {
     Course
   }
