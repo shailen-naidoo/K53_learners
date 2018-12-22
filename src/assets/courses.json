@@ -1,0 +1,73 @@
+{
+  "courses": [
+    {
+      "icon": "error",
+      "title": "Road signs",
+      "color": "red darken-2",
+      "description": "This course will cover all the South African approved road signs",
+      "topics": [
+        {
+          "title": "Regulatory signs"
+        },
+        {
+          "title": "Warning signs"
+        },
+        {
+          "title": "Traffic signals"
+        }, 
+        {
+          "title": "Temporary signs"
+        },
+        {
+          "title": "Road markings"
+        }, 
+        {
+          "title": "Guidance signs"
+        }, 
+        {
+          "title": "Information signs"
+        }
+      ]
+    },
+    {
+      "icon": "assignment",
+      "title": "Rules of the road",
+      "color": "green darken-2",
+      "description": "This course will cover all the rules of the road",
+      "topics": [
+        {
+          "title": "General rules"
+        }, 
+        {
+          "title": "Driving on a divided road"
+        }, 
+        {
+          "title": "Drivng on the shoulder of the road"
+        }, 
+        {
+          "title": "Parking"
+        }
+      ]
+    },
+    {
+      "icon": "time_to_leave",
+      "title": "Controls",
+      "color": "blue darken-2",
+      "description": "This course will cover all the important controls of a car",
+      "topics": [
+        {
+          "title": "Foot controls"
+        },
+        {
+          "title": "Hand controls"
+        },
+        {
+          "title": "Adjusting your mirrors"
+        }, 
+        {
+          "title": "Pre-trip inspection"
+        }
+      ]
+    }
+  ]
+}
