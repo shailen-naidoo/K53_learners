@@ -48,7 +48,7 @@
           v-btn( 
             small 
             flat 
-            :to="{ name: 'Roadsigns' }" 
+            :to="{ name: courses[course_selected].title }" 
           ) start course
 </template>
 
