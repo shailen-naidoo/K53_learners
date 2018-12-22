@@ -1,11 +1,9 @@
 <template lang="pug">
   div
     v-toolbar( app dense flat color="grey lighten-5" )
-      v-tooltip( bottom )
-        v-btn( slot="activator" icon :to="{ name: 'Courses' }" )
-          v-icon keyboard_arrow_left
-        span Back to courses
-      v-toolbar-title {{ title }}
+      v-btn( icon :to="{ name: 'Courses' }" )
+        v-icon keyboard_arrow_left
+      v-toolbar-title {{ courseSelectedInfo.title }}
     v-container( 
       fill-height
       grid-list-md
@@ -18,17 +16,15 @@
       )
         v-flex( md8 sm8 xs12 )
           v-layout( row wrap )
-            v-flex( md4 sm4 xs12 v-for="(topic,i) in topics" :key="i" ) 
+            v-flex( md4 sm4 xs12 v-for="({ title },i) in courseSelectedInfo.topics" :key="i" ) 
               v-card( hover )
                 v-img( src="https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif" )
-                v-card-title {{ topic }}
+                v-card-title {{ title }}
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
-  props: {
-    title: String,
-    topics: Array
-  }
+  computed: mapGetters(["courseSelectedInfo"])
 }
 </script>

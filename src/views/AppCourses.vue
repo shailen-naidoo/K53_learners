@@ -48,7 +48,7 @@
           v-btn( 
             small 
             flat 
-            :to="{ name: courseSelectedInfo.title }" 
+            :to="{ name: 'Course' }" 
           ) start course
 </template>
 
