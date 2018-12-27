@@ -23,7 +23,7 @@
             v-window( v-model="step" )
               v-window-item( v-for="(info,i) in topic.info" :key="i" :value="i" )
                 v-card-text
-                  v-img( :src="info.img" contain )
+                  v-img( :src="info.img" )
                   p.mt-4.subheading {{ info.text }}
                   p {{ info.description }}
             v-card-actions

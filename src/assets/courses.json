@@ -12,14 +12,44 @@
           "finished": false,
           "info": [
             {
-              "text": "This is a stop sign",
-              "description": "This sign is usually found at an intersection and it means you should stop at the stop street",
+              "text": "Stop sign",
+              "description": "Usually found at intersections and used to stop traffic before a stop line",
               "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
               "finished": false
             },
             {
-              "text": "This is a stop/yield sign",
-              "description": "",
+              "text": "Stop/yield sign",
+              "description": "Usually found at intersections and is used to allow traffic turning left to continue without stopping",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "3-way stop sign",
+              "description": "Usually found at intersections and is used to bring traffic from all three directions to a stop",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "4-way stop sign",
+              "description": "Usually found at intersections and is used to bring traffic from all four directions to a stop",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "Stop/Go sign",
+              "description": "Usually found at road works and are mounted back to back, indicates whether you may proceed or stop",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "Yield sign",
+              "description": "Usually found at intersections and railway crossings, indicates you must yield to oncoming traffic",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "Yield to pedestrians sign",
+              "description": "Usually found at pedestrian crossings, indicates you must yield to oncoming pedestrians",
               "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
               "finished": false
             }
