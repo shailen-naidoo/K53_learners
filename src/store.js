@@ -13,6 +13,12 @@ export default new Vuex.Store({
   mutations: {
     updateCourseSelected(state,val) {
       state.course_selected = val;
+    },
+    updateActiveStateOfTopic(state,val) {
+      state.courses[state.course_selected].topics[val].active = !state.courses[state.course_selected].topics[val].active;
+    },
+    updateFinishedStateOfTopic(state,val) {
+      state.courses[state.course_selected].topics[val].finished = !state.courses[state.course_selected].topics[val].finished;
     }
   },
   getters: {

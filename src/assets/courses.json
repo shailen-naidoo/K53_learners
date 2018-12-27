@@ -7,27 +7,57 @@
       "description": "This course will cover all the South African approved road signs",
       "topics": [
         {
-          "title": "Regulatory signs"
+          "title": "Regulatory signs",
+          "active": false,
+          "finished": false,
+          "info": [
+            {
+              "text": "This is a stop sign",
+              "description": "This sign is usually found at an intersection and it means you should stop at the stop street",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "This is a stop/yield sign",
+              "description": "",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            }
+          ]
         },
         {
-          "title": "Warning signs"
+          "title": "Warning signs",
+          "active": false,
+          "finished": false
         },
         {
-          "title": "Traffic signals"
+          "title": "Traffic signals",
+          "active": false,
+          "finished": false
         },
         {
-          "title": "Temporary signs"
+          "title": "Temporary signs",
+          "active": false,
+          "finished": false
         },
         {
-          "title": "Road markings"
+          "title": "Road markings",
+          "active": false,
+          "finished": false
         },
         {
-          "title": "Guidance signs"
+          "title": "Guidance signs",
+          "active": false,
+          "finished": false
         },
         {
-          "title": "Information signs"
+          "title": "Information signs",
+          "active": false,
+          "finished": false
         }
-      ]
+      ],
+      "active": false,
+      "finished": false
     },
     {
       "icon": "assignment",
@@ -47,7 +77,8 @@
         {
           "title": "Parking"
         }
-      ]
+      ],
+      "active": false
     },
     {
       "icon": "time_to_leave",
@@ -67,7 +98,8 @@
         {
           "title": "Pre-trip inspection"
         }
-      ]
+      ],
+      "active": false
     }
   ]
 }

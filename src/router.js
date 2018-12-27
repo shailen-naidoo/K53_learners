@@ -17,6 +17,10 @@ export default new Router({
         path: "courses/course",
         name: "Course",
         component: () => import("./views/AppCourse.vue")
+      }).concat({
+        path: "courses/course/exercises",
+        name: "Exercises",
+        component: () => import("./views/AppExercises.vue")
       })
     }
   ]
