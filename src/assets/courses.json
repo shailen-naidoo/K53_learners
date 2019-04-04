@@ -52,6 +52,18 @@
               "description": "Usually found at pedestrian crossings, indicates you must yield to oncoming pedestrians",
               "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
               "finished": false
+            },
+            {
+              "text": "Yield at traffic circle sign",
+              "description": "Usually found at traffic circles, indicates that you must yield at oncoming traffic circle",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
+            },
+            {
+              "text": "No entry sign",
+              "description": "Usually found at traffic circles, indicates that you must yield at oncoming traffic circle",
+              "img": "https://www.foot.com/wp-content/uploads/2017/03/placeholder.gif",
+              "finished": false
             }
           ]
         },

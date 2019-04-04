@@ -1,3 +1,6 @@
+
+**NB! This project is going to be moved over to a Nuxt.js based project**
+
 # K53 Learners PWA 
 
 **A project that is aimed at South Africans who cannot find great content on the internet for the K53 learners exam**
